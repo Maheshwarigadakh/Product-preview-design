@@ -10,12 +10,32 @@
             width: 500px;
             display: block;
             border: 1px solid black;
+            box-shadow: 1px 1px 10px 0px black;
             border-radius: 25px;
             margin-left: 500px;
+        }
+        div{
+            display: flex;
+            justify-content: center;
+        }
+        .small-img{
+            height: 80px;
+            width: 80px;
+            margin: 10px;
+            border: 1px solid black;
+            border-radius: 7px;
         }
     </style>
 </head>
 <body>
+    <h1>Car Preview Design</h1>
     <img src="1.png" id="main-image">
+    <div>
+        <img src="1.png" class="small-img" onclick="changeimg('1.png')">
+        <img src="2.png" class="small-img" onclick="changeimg('2.png')">
+        <img src="3.png" class="small-img" onclick="changeimg('3.png')">
+        <img src="4.png" class="small-img" onclick="changeimg('4.png')">
+        <img src="5.png" class="small-img" onclick="changeimg('5.png')">
+    </div>
 </body>
 </html>
