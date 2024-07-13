@@ -6,13 +6,14 @@
     <title>Preview Design</title>
     <style>
         #main-image{
-            height: 500px;
-            width: 500px;
+            height: 550px;
+            width: 550px;
             display: block;
             border: 1px solid black;
-            box-shadow: 1px 1px 10px 0px black;
+            box-shadow: 2px 2px 15px 0px black;
             border-radius: 25px;
             margin-left: 500px;
+        
         }
         div{
             display: flex;
@@ -24,6 +25,8 @@
             margin: 10px;
             border: 1px solid black;
             border-radius: 7px;
+            cursor: pointer;
+            object-fit: cover;
         }
     </style>
 </head>
@@ -37,5 +40,11 @@
         <img src="4.png" class="small-img" onclick="changeimg('4.png')">
         <img src="5.png" class="small-img" onclick="changeimg('5.png')">
     </div>
+    <script>
+        function changeimg(imgname){
+            const mainimage = document.getElementById('main-image');
+            mainimage.src=imgname;
+        }
+    </script>
 </body>
 </html>
